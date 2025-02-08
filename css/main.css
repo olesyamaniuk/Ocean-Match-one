@@ -216,8 +216,12 @@ a {
 
   text-decoration: none;
   color: rgba(246, 242, 242, 1);
+  transition: all 0.1s ease;
 }
-
+.navigation__link:hover,
+.navigation__link:focus {
+  color: rgba(254, 248, 0, 1);
+}
 .header.is-open {
   background-color: transparent;
 }
@@ -289,7 +293,10 @@ a {
     text-decoration-skip-ink: none;
     color: rgba(254, 248, 0, 1);
   }
-
+  .navigation__link:hover,
+  .navigation__link:focus {
+    color: rgba(246, 242, 242, 1);
+  }
   .header__icon-home-img {
     display: none;
   }
@@ -340,8 +347,13 @@ a {
   text-decoration-skip-ink: none;
 
   padding: 40px 0;
+  transition: all 0.1s ease;
 }
-
+.home__google-button_link:hover .home__google-button_image {
+  content: url("/image/home/1.png");
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
